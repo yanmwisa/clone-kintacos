@@ -1,0 +1,149 @@
+/* Ensure that the container stretches to the full width */
+.main-container {
+    width: 100%;
+    display: flex; /* Use flexbox to layout children */
+    justify-content: space-around; /* Space logo and menu items */
+    align-items: center; /* Center items vertically */
+    background-color: #000; /* Set the background color */
+    padding: 40px 40px; /* Add some padding on the sides */
+    position: fixed;
+    top:0;
+  }
+  
+  .logo h1 {
+    margin: 0; /* Remove default margin */
+    color: #fff; /* Set a text color that contrasts with the background */
+   
+  }
+  
+  
+  .c-item {
+    display: flex; /* Layout menu items in a row */
+  }
+  
+  .c-item .item {
+    color: #fff; /* Set text color for menu items */
+    text-decoration: none; /* Remove underline from links */
+    margin-left: 20px; /* Space out the menu items */
+  }
+  
+  /* Add responsiveness for smaller screens */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stack logo and menu on small screens */
+      text-align: center; /* Center text when stacked */
+    }
+  
+    .c-item {
+      flex-direction: column; /* Stack menu items on small screens */
+      align-items: center; /* Center menu items */
+      margin-top: 20px; /* Add space between logo and menu items */
+    }
+  
+    .c-item .item {
+      margin: 10px 0; /* Add vertical space between menu items */
+    }
+  }
+  
+  /*nav bar css modification */
+  
+  .section{
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    padding: 55px 20px;
+    color: #fff;
+  }
+/* dncisdnciov */
+.c-item .item {
+    color: #fff; /* Couleur du texte pour les éléments du menu */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    margin-left: 20px; /* Espace les éléments du menu */
+    transition: color 0.3s, transform 0.3s; /* Transition pour l'effet de brillance */
+  }
+  
+  /* Effet de survol */
+  .c-item .item:hover {
+    color: #e0e0e0; /* Change la couleur du texte au survol */
+    transform: scale(1.1); /* Agrandit légèrement l'élément */
+  }
+  
+  /* Effet au clic */
+  .c-item .item:active {
+    color: #c0c0c0; /* Change la couleur du texte lorsqu'il est cliqué */
+    transform: scale(0.9); /* Rétrécit légèrement l'élément */
+  }
+  
+
+/* jdvnlkjndknvkdmvkdmvlkdmvkdmvldmvldv */
+
+
+    .container {
+        width: 100%;
+        max-width: 1200px; /* Ajustez la largeur maximale selon vos besoins */
+        margin: auto;
+        padding: 0 15px; /* Ajoutez du padding pour éviter que le contenu touche les bords */
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .col-6 {
+        width: 50%; /* Prend la moitié de la largeur du parent */
+        padding-right: 15px;
+        padding-left: 15px;
+        box-sizing: border-box; /* Inclut padding dans la largeur */
+    }
+
+    .col-12 {
+        width: 100%; /* Prend toute la largeur du parent */
+        padding-right: 15px;
+        padding-left: 15px;
+        box-sizing: border-box;
+    }
+
+    label {
+        display: block; /* Rend le label en block pour qu'il prenne toute la largeur */
+        margin-bottom: 5px; /* Ajoutez de l'espace en dessous du label */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%; /* Prend toute la largeur de son parent */
+        padding: 10px;
+        margin-bottom: 10px; /* Ajoute de l'espace en dessous de l'input */
+        border: 1px solid #ccc; /* Une bordure légère pour l'input */
+        border-radius: 4px; /* Des coins arrondis */
+    }
+
+    button {
+        display: block; /* Rend le bouton en block */
+        width: 100%; /* Prend toute la largeur de son parent */
+        padding: 10px;
+        background-color: black; /* Couleur de fond du bouton */
+        color: white; /* Couleur du texte du bouton */
+        border: none;
+        border-radius: 4px;
+        cursor: pointer; /* Change le curseur pour indiquer un élément cliquable */
+        margin-top: 10px; /* Ajoute de l'espace au-dessus du bouton */
+    }
+
+    button:hover {
+        background-color: #333; /* Assombrir le bouton lors du survol */
+    }
+
+    address,
+    time,
+    p {
+        margin-bottom: 10px; /* Ajoute de l'espace en dessous des paragraphes */
+    }
+
+    address strong {
+        font-size: larger; /* Augmente la taille du nom de l'entreprise */
+    }
+
